@@ -1,0 +1,39 @@
+<!-- Setup the webpage -->
+Display heading "Rock Paper Scissors"
+
+Display three buttons:
+  - Rock
+  - Paper
+  - Scissors
+
+When a button is clicked:
+  - Call a function in JavaScript with the user's choice (rock/paper/scissors)
+
+Create a section (a <div>) to show the result of the game
+
+
+Function playGame(userChoice):
+  // Step 1: Define possible choices
+  Set choices = ['rock', 'paper', 'scissors']
+
+  // Step 2: Computer picks randomly
+  mathRandom() *3
+  Set computerChoice = randomly pick one from choices
+
+  // Step 3: Decide the result
+  If userChoice is equal to computerChoice:
+    Set result = "It's a tie!"
+  Else if:
+    (user chooses rock AND computer chooses scissors) OR
+    (user chooses paper AND computer chooses rock) OR
+    (user chooses scissors AND computer chooses paper)
+    Then:
+      Set result = "You win! [your choice] beats [computer's choice]"
+  Else:
+    Set result = "You lose! [computer's choice] beats [your choice]"
+
+  // Step 4: Show the result
+  Display on the webpage:
+    - What the user chose
+    - What the computer chose
+    - Who won
